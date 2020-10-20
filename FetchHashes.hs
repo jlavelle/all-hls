@@ -1,6 +1,6 @@
 #! /usr/bin/env nix-shell
 #! nix-shell --keep GITHUB_TOKEN --keep NIX_SSL_CERT_FILE
-#! nix-shell -p "haskellPackages.ghcWithPackages (p: [ p.text p.bytestring p.github p.pretty-simple p.vector p.regex-tdfa p.aeson p.aeson-pretty p.cryptohash-sha256 p.http-client p.http-client-tls p.http-conduit p.http-types p.base16 p.async ])"
+#! nix-shell -p "haskellPackages.ghcWithPackages (p: [ p.text p.bytestring p.github p.vector p.regex-tdfa p.aeson p.aeson-pretty p.cryptohash-sha256 p.http-client p.http-client-tls p.base16 p.async ])"
 #! nix-shell -i runhaskell
 
 {-# LANGUAGE
@@ -18,9 +18,7 @@
 import Prelude hiding ( writeFile, putStrLn )
 
 import GitHub
-import System.Environment ( getEnv )
-
-import Text.Pretty.Simple ( pPrint )
+import System.Environment ( getEnv, getArgs )
 
 import Control.Arrow ( (&&&) )
 
@@ -46,29 +44,25 @@ import Data.Aeson ( ToJSON(..), ToJSONKey(..) )
 import qualified Data.Aeson as J
 import qualified Data.Aeson.Encode.Pretty as J
 
-import GHC.Generics
+import GHC.Generics (Generic)
 
 import Data.ByteString.Internal ( packChars )
 import qualified Data.ByteString as BS
 
-
-import Data.ByteString.Lazy ( writeFile )
 import qualified Data.ByteString.Lazy as LBS
 
-import Crypto.Hash.SHA256 ( hash )
 import qualified Crypto.Hash.SHA256 as H
 
 import Control.Applicative ( liftA2 )
 
-import Data.IORef
+import Data.Functor ((<&>))
 
-import Network.HTTP.Client
-import Network.HTTP.Client.TLS as TLS
-import Network.HTTP.Types
+import qualified Network.HTTP.Client.TLS as TLS
+import Network.HTTP.Client ( parseUrlThrow, withResponse, responseBody )
 
 import "base16" Data.ByteString.Base16 ( encodeBase16 )
 
-import Control.Concurrent.Async
+import Control.Concurrent.Async ( Concurrently(..), runConcurrently )
 
 data Platform = Linux | MacOS | Windows
   deriving stock    (Eq, Ord, Show, Generic)
@@ -94,9 +88,10 @@ type Result = Map Version (Map Platform HLSRelease)
 main :: IO ()
 main = do
   token <- getEnv "GITHUB_TOKEN"
+  path <- getArgs <&> \xs -> if null xs then "./sources.json" else head xs
   Right releases <- github (OAuth $ packChars token) $ releasesR "haskell" "haskell-language-server" 10
   result <- hlsReleases $ V.toList releases
-  writeFile "/mnt/code/git/nix/repos/all-hls/sources.json" $ J.encodePretty' (J.defConfig { J.confIndent = J.Spaces 2 }) $ result
+  LBS.writeFile path $ J.encodePretty' (J.defConfig { J.confIndent = J.Spaces 2 }) $ result
 
   where
 
