@@ -46,9 +46,7 @@ import qualified Data.Aeson.Encode.Pretty as J
 
 import GHC.Generics (Generic)
 
-import Data.ByteString.Internal ( packChars )
-import qualified Data.ByteString as BS
-
+import qualified Data.ByteString.Char8 as BS
 import qualified Data.ByteString.Lazy as LBS
 
 import qualified Crypto.Hash.SHA256 as H
@@ -89,7 +87,7 @@ main :: IO ()
 main = do
   token <- getEnv "GITHUB_TOKEN"
   path <- getArgs <&> \xs -> if null xs then "./sources.json" else head xs
-  Right releases <- github (OAuth $ packChars token) $ releasesR "haskell" "haskell-language-server" 10
+  Right releases <- github (OAuth $ BS.pack token) $ releasesR "haskell" "haskell-language-server" 10
   result <- hlsReleases $ V.toList releases
   LBS.writeFile path $ J.encodePretty' (J.defConfig { J.confIndent = J.Spaces 2 }) $ result
 
