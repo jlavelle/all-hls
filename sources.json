@@ -1,72 +1,5 @@
 {
-  "0.1": {},
   "0.2": {},
-  "0.2.1": {
-    "MacOS": {
-      "wrapper": {
-        "hash": "399fff89b64dbb9fc7d17116c6fdb46f8742a8e6fc9dffc447954b144f8cc06c",
-        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-wrapper-macOS.gz"
-      },
-      "ghcs": {
-        "8.6.4": {
-          "hash": "f2d27facb37f3a8c5c057a804629386b44f8989c493ddb0336a7277acc3d577d",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.6.4.gz"
-        },
-        "8.10.1": {
-          "hash": "e55b2481d10548223d993547b078d9f5bc6e1ced4236557562cf70358d4fe90a",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.10.1.gz"
-        },
-        "8.6.5": {
-          "hash": "661d80c02ddab1957dcb5c4a44b283116c69004384e8f24b8fd31364214f67df",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.6.5.gz"
-        },
-        "8.8.4": {
-          "hash": "c816a44b2ef987467835e4ac97e87ce62c460101b298811e8f7f9da870e64bdf",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.4.gz"
-        },
-        "8.8.2": {
-          "hash": "cf98d207d88ee54254d0a6829c6b823c38e58016c710a4c5e1adb690c8f07981",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.2.gz"
-        },
-        "8.8.3": {
-          "hash": "95f3bae9eeed3c260a7b2476aba11221a87be79b0746c81b431c0cd8304f8508",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.3.gz"
-        }
-      }
-    },
-    "Linux": {
-      "wrapper": {
-        "hash": "83832dfa2cc65a20ef6a87edb416700c80e3f8d11b03642cb93d6cee53870f3e",
-        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-wrapper-Linux.gz"
-      },
-      "ghcs": {
-        "8.6.4": {
-          "hash": "7c4c2cadbe1de048af375360c57afe0ec8a61f4d97475380b76e53458b66e177",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.6.4.gz"
-        },
-        "8.10.1": {
-          "hash": "3a5cd4b0d8cfb654fd360cb1eeb56f3a8e125161a006d2bea8f3f147186c8beb",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.10.1.gz"
-        },
-        "8.6.5": {
-          "hash": "2d74ea87bd1d4d2fcc0698e33b1d066f08a7a33f833a06819cc2e901f722b721",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.6.5.gz"
-        },
-        "8.8.4": {
-          "hash": "44f5c054f51dc5962b29ab1248978843d78d3229d4d3b8cd0e12e0ab17c4e412",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.4.gz"
-        },
-        "8.8.2": {
-          "hash": "3293e75104e1f369ac17bf5130d4b2fb6696c595906e59ce556ff5ae9c0f39d7",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.2.gz"
-        },
-        "8.8.3": {
-          "hash": "25510b7e089dd7157b712aa2909cab6b1680d21f16a6fb98d3c5db8ff0ceb307",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.3.gz"
-        }
-      }
-    }
-  },
   "0.2.2": {
     "MacOS": {
       "wrapper": {
@@ -129,72 +62,6 @@
         "8.8.3": {
           "hash": "e993b94a7216098ae67b47e270228e058b5212e5f25730eb104c1113882c5433",
           "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.2/haskell-language-server-Linux-8.8.3.gz"
-        }
-      }
-    }
-  },
-  "0.3.0": {
-    "MacOS": {
-      "wrapper": {
-        "hash": "f0503e9acdcd2574463701ef94175848d20b6214a39b7b90a4cf8305b84d5972",
-        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-wrapper-macOS.gz"
-      },
-      "ghcs": {
-        "8.6.4": {
-          "hash": "9c5d18fc7f61dee6b40e35bd6623b74901047a400af68e9685d0cbb23b53d705",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.6.4.gz"
-        },
-        "8.10.1": {
-          "hash": "d224e0a9b51f4a37a1cfcc5b9c1c5045824611eda7d4a39be6409f8f7a0c006c",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.10.1.gz"
-        },
-        "8.6.5": {
-          "hash": "02f691f37d596c5b15157f0eea1bc111fb8afdb99a9cb04dd8e48c6038ffbe35",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.6.5.gz"
-        },
-        "8.8.4": {
-          "hash": "f5d70035793513dc4307e096126f00c27a950a76da4770f0d25a469633273a11",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.4.gz"
-        },
-        "8.8.2": {
-          "hash": "adaae5fbba6a9ae8fe1a0779184d33530acffaa96d8429e0e392109ea2de60af",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.2.gz"
-        },
-        "8.8.3": {
-          "hash": "b4578f5744adfb0ca3653f75ed2a3b3fc5bde47d2c572b9ad654333a8bee5af7",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.3.gz"
-        }
-      }
-    },
-    "Linux": {
-      "wrapper": {
-        "hash": "d5f8142f88dd1203b6eabeb741bfbe34e8286d5fdb7f3db85d0f4e56235429ba",
-        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-wrapper-Linux.gz"
-      },
-      "ghcs": {
-        "8.6.4": {
-          "hash": "3207ab51e80ec2811c56091cfbdb1c99dce38e26b8bab054affa8fd59ec07be0",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.6.4.gz"
-        },
-        "8.10.1": {
-          "hash": "103df9a883577a1f1f32644ddaf478c0abc950588964acf00da05a27c0547813",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.10.1.gz"
-        },
-        "8.6.5": {
-          "hash": "6df122f307131b98b9c5e9ea3c389d658bb8814516ea77628f8611c0cfa18e33",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.6.5.gz"
-        },
-        "8.8.4": {
-          "hash": "93de83754fbfb85f8918fc099cc5c390e150b40973587148fb99f129d1e294b4",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.4.gz"
-        },
-        "8.8.2": {
-          "hash": "567a67e184d9b7be7d65604a958099c4c505221b9796ddbd5b6e6a9fff4e3318",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.2.gz"
-        },
-        "8.8.3": {
-          "hash": "955cba33f2dadf212c3243e13a20849f51f8d4d66aa952ba420f13a7da3a6436",
-          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.3.gz"
         }
       }
     }
@@ -272,6 +139,286 @@
         }
       }
     }
+  },
+  "0.5.1": {
+    "MacOS": {
+      "wrapper": {
+        "hash": "a31a35f2fc9cdc22a1202b828cf23826279f568d4b3d4b4632ce84b694a4d804",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-wrapper-macOS.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "541e42d7dcfe949e359315928f1da78f0ec151b7a8e5a1a9522e23aeb6bebebe",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "1c92f571044d3b9b171a86ca0689a33837dbf123c502443fc655f3b1a086f11d",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "a8b0979466acb016629c738f82a70e919c7bb4fe6b85408c951a2ea348b627d5",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "e995fdfb6f1de3b4b3e0628b628ef287cc415e734a3241b600607ef07d6340e4",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "57964603d3f43430aaf9a77c262957c086a05058199de340c9c7608664b6450b",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "13b4c701b925347ad853b408a47d925976aae520b82f84077f1c9e8be9aa0a0d",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.8.3.gz"
+        },
+        "8.10.2": {
+          "hash": "6bf0ac69c9ad43454e060b35892319b0878627297c386bafde884004a9df550c",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-macOS-8.10.2.gz"
+        }
+      }
+    },
+    "Linux": {
+      "wrapper": {
+        "hash": "2092ff195093854ffe79c655ba8ccfd6ebc4782e3d3ad098bff5fc3fb286083c",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-wrapper-Linux.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "4135735351676f6ac9203f444db337694e584fca32d786f756faa0849c2fc194",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "758e798c57c2d5aac60641a103c4d8a76b486ba7eb746f2eef498ef0e11f5782",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "cee03bc6864a153cbab00a43363f75680676f13525fa75c1ca31c61a8a6227dc",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "e99036ef2fc3fba9d484a729d958ccdf8d772e4a512bd2b2ba13065d52242b93",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "f1fbeab482e69aa637f081920b2d277531bee191d4bd6b1cd1ad5546c7b771e8",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "83c1ab2c9a9a1c8ea59f2318b0c12d4459836fcaa953d6bf938c0fce2998516d",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.8.3.gz"
+        },
+        "8.10.2": {
+          "hash": "58d7ee36809bf40183a69589c819aaa256a75d2e7fda4e3a0505e84fc7534274",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.1/haskell-language-server-Linux-8.10.2.gz"
+        }
+      }
+    }
+  },
+  "0.1": {},
+  "0.5.0": {
+    "MacOS": {
+      "wrapper": {
+        "hash": "205a21ef9d66d077ae2782aa2f90929381c45d5c584e61f49c0c9e294aca2da2",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-wrapper-macOS.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "dbeed0ebbcc23c61f1188455f6f6348378050b38e0f08e47d8ffbf4bd5b2795e",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "78c78f369c48a238bc5baa5c302a66629822ca46ba3533fe0ef43ff9689fb123",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "0f80835bf9a0b6a3ca43bdfa02845e86869e1c3857217303ea2ed7199bdf42dc",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "a612cc1da5ccda4a6f11bef33fabc7f58ccf2580e5fead5d0c95384c071c0a54",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "e534b1e3c68f7acd037fcf1964b8008fa80b791f3dc7b38655addd693a3448cc",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "ffafc31d3ddfd0748fba9359f8db7000d8ba0c3136ff7260addd34f7cc1979b1",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.8.3.gz"
+        },
+        "8.10.2": {
+          "hash": "48848e2e92b5a49c5ba0f3b4c1949153d3896208c89185312dde48b0878544ea",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-macOS-8.10.2.gz"
+        }
+      }
+    },
+    "Linux": {
+      "wrapper": {
+        "hash": "4afce25f30391bd5fcadae06f7ff0bdede8a8a576cf59d44d68f8aace8b03fd4",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-wrapper-Linux.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "b0e3e03554f6ef517f13b78477c84fd1952ac9ac94d2608cc1238321f0a544d8",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "b1f81613f9a1aa62376d1316a61f3d46fa023a14b2536ed9d1f46036ad73c820",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "4b59dbb5f82b6ad4ac7243fe1b68bb608b9559e9862f1950a6890653ef69a92d",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "5691f3670a3696eea596cc07fcd12a43206b04a0495c229b5b4cc3dde9c6eb98",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "e681c361f7d2d3391dd7133f8d47dd1695de1a72771875b2ccdd2d0b56767af0",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "31bc5bd2343fa47d49215097ad288e425b761e202eecae72ac9b6427bcda0e03",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.8.3.gz"
+        },
+        "8.10.2": {
+          "hash": "92d81ca53ea6a1fdb6915809d95b936bef4bacbb062529907931fb21e7315425",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.5.0/haskell-language-server-Linux-8.10.2.gz"
+        }
+      }
+    }
+  },
+  "0.3.0": {
+    "MacOS": {
+      "wrapper": {
+        "hash": "f0503e9acdcd2574463701ef94175848d20b6214a39b7b90a4cf8305b84d5972",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-wrapper-macOS.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "9c5d18fc7f61dee6b40e35bd6623b74901047a400af68e9685d0cbb23b53d705",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "d224e0a9b51f4a37a1cfcc5b9c1c5045824611eda7d4a39be6409f8f7a0c006c",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "02f691f37d596c5b15157f0eea1bc111fb8afdb99a9cb04dd8e48c6038ffbe35",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "f5d70035793513dc4307e096126f00c27a950a76da4770f0d25a469633273a11",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "adaae5fbba6a9ae8fe1a0779184d33530acffaa96d8429e0e392109ea2de60af",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "b4578f5744adfb0ca3653f75ed2a3b3fc5bde47d2c572b9ad654333a8bee5af7",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-macOS-8.8.3.gz"
+        }
+      }
+    },
+    "Linux": {
+      "wrapper": {
+        "hash": "d5f8142f88dd1203b6eabeb741bfbe34e8286d5fdb7f3db85d0f4e56235429ba",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-wrapper-Linux.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "3207ab51e80ec2811c56091cfbdb1c99dce38e26b8bab054affa8fd59ec07be0",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "103df9a883577a1f1f32644ddaf478c0abc950588964acf00da05a27c0547813",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "6df122f307131b98b9c5e9ea3c389d658bb8814516ea77628f8611c0cfa18e33",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "93de83754fbfb85f8918fc099cc5c390e150b40973587148fb99f129d1e294b4",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "567a67e184d9b7be7d65604a958099c4c505221b9796ddbd5b6e6a9fff4e3318",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "955cba33f2dadf212c3243e13a20849f51f8d4d66aa952ba420f13a7da3a6436",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.3.0/haskell-language-server-Linux-8.8.3.gz"
+        }
+      }
+    }
+  },
+  "0.2.1": {
+    "MacOS": {
+      "wrapper": {
+        "hash": "399fff89b64dbb9fc7d17116c6fdb46f8742a8e6fc9dffc447954b144f8cc06c",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-wrapper-macOS.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "f2d27facb37f3a8c5c057a804629386b44f8989c493ddb0336a7277acc3d577d",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "e55b2481d10548223d993547b078d9f5bc6e1ced4236557562cf70358d4fe90a",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "661d80c02ddab1957dcb5c4a44b283116c69004384e8f24b8fd31364214f67df",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "c816a44b2ef987467835e4ac97e87ce62c460101b298811e8f7f9da870e64bdf",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "cf98d207d88ee54254d0a6829c6b823c38e58016c710a4c5e1adb690c8f07981",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "95f3bae9eeed3c260a7b2476aba11221a87be79b0746c81b431c0cd8304f8508",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-macOS-8.8.3.gz"
+        }
+      }
+    },
+    "Linux": {
+      "wrapper": {
+        "hash": "83832dfa2cc65a20ef6a87edb416700c80e3f8d11b03642cb93d6cee53870f3e",
+        "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-wrapper-Linux.gz"
+      },
+      "ghcs": {
+        "8.6.4": {
+          "hash": "7c4c2cadbe1de048af375360c57afe0ec8a61f4d97475380b76e53458b66e177",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.6.4.gz"
+        },
+        "8.10.1": {
+          "hash": "3a5cd4b0d8cfb654fd360cb1eeb56f3a8e125161a006d2bea8f3f147186c8beb",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.10.1.gz"
+        },
+        "8.6.5": {
+          "hash": "2d74ea87bd1d4d2fcc0698e33b1d066f08a7a33f833a06819cc2e901f722b721",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.6.5.gz"
+        },
+        "8.8.4": {
+          "hash": "44f5c054f51dc5962b29ab1248978843d78d3229d4d3b8cd0e12e0ab17c4e412",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.4.gz"
+        },
+        "8.8.2": {
+          "hash": "3293e75104e1f369ac17bf5130d4b2fb6696c595906e59ce556ff5ae9c0f39d7",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.2.gz"
+        },
+        "8.8.3": {
+          "hash": "25510b7e089dd7157b712aa2909cab6b1680d21f16a6fb98d3c5db8ff0ceb307",
+          "url": "https://github.com/haskell/haskell-language-server/releases/download/0.2.1/haskell-language-server-Linux-8.8.3.gz"
+        }
+      }
+    }
   }
 }
-
