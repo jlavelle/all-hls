@@ -25,7 +25,7 @@ import Control.Arrow ( (&&&) )
 import Control.Category ( (<<<), (>>>) )
 
 import Data.List ( find )
-import Data.Maybe ( mapMaybe )
+import Data.Maybe ( catMaybes )
 
 import Data.Text ( Text, pack, unpack )
 import Data.Text.IO ( putStrLn )
@@ -139,10 +139,12 @@ main = do
     hlsName = "haskell-language-server-" <> platformName p <> "-([0-9]+\\.[0-9]+\\.[0-9]+)\\.gz"
 
     hls :: IO (Map Version Ref)
-    hls = fmap (M.fromList . mapMaybe id) $ runConcurrently $ traverse (Concurrently . parseHLS) assets
+    hls = fmap (M.fromList . catMaybes) $ runConcurrently $ traverse (Concurrently . parseHLS) assets
 
     parseHLS :: ReleaseAsset -> IO (Maybe (Version, Ref))
-    parseHLS asset = traverse sequenceA $ do
-      AllTextSubmatches xs <- releaseAssetName asset =~~ hlsName
-      let ghc = xs !! 1
-      pure $ (ghc, refOfAsset asset)
+    parseHLS asset = traverse (\v -> (v,) <$> refOfAsset asset) maybeGhc
+      where
+      maybeGhc :: Maybe Version
+      maybeGhc = do
+        AllTextSubmatches (_:ghc:_) <- releaseAssetName asset =~~ hlsName
+        pure ghc
