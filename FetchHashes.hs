@@ -12,6 +12,7 @@
   , DeriveAnyClass
   , GeneralizedNewtypeDeriving
   , PackageImports
+  , BangPatterns
 #-}
 
 import Prelude hiding ( writeFile, putStrLn )
@@ -62,7 +63,7 @@ import Control.Applicative ( liftA2 )
 import Data.IORef
 
 import Network.HTTP.Client
-import Network.HTTP.Client.TLS
+import Network.HTTP.Client.TLS as TLS
 import Network.HTTP.Types
 
 import "base16" Data.ByteString.Base16 ( encodeBase16 )
@@ -118,24 +119,17 @@ main = do
 
     downloadAndHash :: URL -> IO Hash
     downloadAndHash (URL url) = encodeBase16 <$> do
-      manager <- newManager tlsManagerSettings -- TODO: See if this should be shared
-      request <- parseRequest $ unpack url
-      withResponse request manager $ \response -> do
-        let
-          status = responseStatus response
-          readChunk = responseBody response
-        if not $ statusIsSuccessful status
-          then fail $ "The url " <> show url <> " responded with the non-2xx status code: " <> show status
-          else do
-            ior <- newIORef H.init
-            let
-              step = do
-                chunk <- readChunk
-                if BS.null chunk
-                  then H.finalize <$> readIORef ior
-                  else modifyIORef' ior (flip H.update $ chunk) *> step
-            step
-
+      manager <- TLS.getGlobalManager
+      request <- parseUrlThrow $ unpack url
+      withResponse request manager handleResponse
+      where
+        handleResponse r = loop H.init
+          where
+            loop !ctx = do
+              chunk <- responseBody r
+              if BS.null chunk
+                then pure $ H.finalize ctx
+                else loop $ H.update ctx chunk
 
     refOfAsset :: ReleaseAsset -> IO Ref
     refOfAsset asset = Ref url <$> downloadAndHash url
